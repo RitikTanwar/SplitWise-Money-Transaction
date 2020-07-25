@@ -20,11 +20,6 @@ int main(){
         // cout<<net[i]<<" ";
         if(net[i]!=0) m.insert(net[i]);
     }
-    // cout<<"\n";
-    // for(auto x:m){
-    //         cout<<x<<" ";
-    // }
-    // cout<<"\n";
     int cnt=0;
     while(!m.empty()){
         auto low=m.begin();
@@ -46,10 +41,7 @@ int main(){
             m.insert(debit);
         }
         if(credit!=0) m.insert(credit);
-        // for(auto x:m){
-        //     cout<<x<<" ";
-        // }
-        // cout<<"\n";
+        
     }
     cout<<cnt;
     return 0;
